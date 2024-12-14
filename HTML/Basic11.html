@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tutorial</title>
+</head>
+<body>
+    
+    <form>
+
+        <!--label is used to signify what the input box is for,   for attribute value and input element id value must be same to link-->
+        <label for="name">Enter your name</label>
+        <input id="name" name="name"  type="text" placeholder="John Doe"/>
+        </br></br>
+        
+        <label for="age">Enter your Age</label>
+        <input id="age" name="age" type="number" placeholder="24" required/>
+
+        <!-- name attribute is used for server side , fetching the data-->
+        <!-- another attribute is value attr, which will will be real value,  for name act as key and value as value-->
+        <!-- Required is used, if you submit the form without placing the value, form won't be submitted-->
+        <input type="submit" value="Submit"/>
+
+    </form>
+</body>
+</html>

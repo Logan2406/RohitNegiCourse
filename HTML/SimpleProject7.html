@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project on Form</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form>
+        <label for="fullName">Full Name :</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter Name"/>
+        <br/><br/>
+        <label for="emailId">Email :</label>
+        <input type="email" id="emailId" name="emailId" placeholder="abc@xyz.com"/>
+        <br/><br/>
+        <label for="secret">Secret Text :</label>
+        <input type="password" id="secret" name="secret" placeholder="topSecret"/>
+        <br/><br/>
+        <label for="phoneNum">Mobile :</label>
+        <input type="tel" id="phoneNum" name="phoneNum" placeholder="1234567890"/>
+        <br/><br/>
+        <label for="phoneNum">Message :</label>
+        <textarea id="message" name="message" rows="5" cols="20"></textarea>
+        <br/><br/>
+        <input type="submit" value="Send"/>
+    </form> 
+
+    <br/><br/><br/><br/><br/>
+    <h1>User Registration</h1>
+    <form>
+        <label for="username">Full Name :</label>
+        <input type="text" id="username" name="username" placeholder="Enter UserName"/>
+        <br/><br/>
+        <label for="eId">Email :</label>
+        <input type="email" id="ed" name="eId" placeholder="abc@xyz.com"/>
+        <br/><br/>
+        <label for="pass">Password :</label>
+        <input type="password" id="pass" name="pass" placeholder="password"/>
+        <br/><br/>
+        Gender:
+        <input type="radio" id="male" name="gender" value="Male"/>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female"/>
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender"value="Other"/>
+        <label for="other">Other</label>
+        <!-- Name field for the radio buttons are important, we can group a type using this, name should be same, only one can be checked-->
+        <br/><br/>
+        Hobbies :
+        <input type="checkbox" id="sports" name="hobbies" value="sports"/>  
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" id="drawing" name="hobbies" value="drawing"/>   
+        <label for="drawing">Drawing</label>
+
+        <input type="checkbox" id="coding" name="hobbies" value="coding"/>   
+        <label for="coding">Coding</label>
+       
+        <br/><br/>
+        <input type="submit" value="Register"/>
+    
+    </form>
+
+</body>
+</html>

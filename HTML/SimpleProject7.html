@@ -29,15 +29,21 @@
     <br/><br/><br/><br/><br/>
     <h1>User Registration</h1>
     <form>
+        <fieldset>
+        <legend>Register :</legend>
+        
         <label for="username">Full Name :</label>
         <input type="text" id="username" name="username" placeholder="Enter UserName"/>
         <br/><br/>
+        
         <label for="eId">Email :</label>
-        <input type="email" id="ed" name="eId" placeholder="abc@xyz.com"/>
+        <input type="email" id="ed" name="eId" placeholder="abc@xyz.com" required/>
         <br/><br/>
+        
         <label for="pass">Password :</label>
         <input type="password" id="pass" name="pass" placeholder="password"/>
         <br/><br/>
+        
         Gender:
         <input type="radio" id="male" name="gender" value="Male"/>
         <label for="male">Male</label>
@@ -49,6 +55,7 @@
         <label for="other">Other</label>
         <!-- Name field for the radio buttons are important, we can group a type using this, name should be same, only one can be checked-->
         <br/><br/>
+        
         Hobbies :
         <input type="checkbox" id="sports" name="hobbies" value="sports"/>  
         <label for="sports">Sports</label>
@@ -58,9 +65,23 @@
 
         <input type="checkbox" id="coding" name="hobbies" value="coding"/>   
         <label for="coding">Coding</label>
-       
         <br/><br/>
+        
+        <label for="country">Choose country :</label>
+        <select name="country" id="country">
+            <option disabled selected value="choose">Please Select your country</option>
+            <option value="India">India</option>
+            <option value="Others">Others</option>
+        </select>
+        <br/><br/>
+
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" min="2000-01-01" max="2010-01-01"/>
+        <br/><br/>
+        
         <input type="submit" value="Register"/>
+        </fieldset>
     
     </form>
 
